@@ -1,4 +1,5 @@
 const auto = () => {
+    if (!window.location.href.startsWith("https://www.youtube.com/shorts/")) return
     const currentTime = new Date().toLocaleTimeString();
     console.log(`wait - ${currentTime}`);
     setTimeout(() => {
