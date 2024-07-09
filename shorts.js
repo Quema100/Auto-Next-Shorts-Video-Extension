@@ -28,7 +28,7 @@ const auto = () => {
             }
         }
         auto();
-    }, 500);
+    }, 1000);
 };
 
 window.onload = auto;
