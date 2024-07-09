@@ -2,7 +2,7 @@ const auto = () => {
     const currentTime = new Date().toLocaleTimeString();
     console.log(`wait - ${currentTime}`);
     setTimeout(() => {
-        if (!window.location.href.startsWith("https://www.youtube.com/shorts/")) return
+        if (!window.location.href.startsWith("https://www.youtube.com/shorts/")) return auto()
         const value = document.querySelector("ytd-scrubber > shorts-player-controls > div > div > div > div[aria-valuenow]");
         console.log(value);
         if (value == null || value == undefined) {
