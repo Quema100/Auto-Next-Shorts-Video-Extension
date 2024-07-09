@@ -1,8 +1,8 @@
 const auto = () => {
-    if (!window.location.href.startsWith("https://www.youtube.com/shorts/")) return
     const currentTime = new Date().toLocaleTimeString();
     console.log(`wait - ${currentTime}`);
     setTimeout(() => {
+        if (!window.location.href.startsWith("https://www.youtube.com/shorts/")) return
         const value = document.querySelector("ytd-scrubber > shorts-player-controls > div > div > div > div[aria-valuenow]");
         console.log(value);
         if (value == null || value == undefined) {
