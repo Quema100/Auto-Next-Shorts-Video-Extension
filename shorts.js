@@ -17,7 +17,7 @@ const auto = () => {
             }
         } else {
             console.log("here");
-            if (parseInt(value.getAttribute('aria-valuenow'), 10) >= 97) {
+            if (value.getAttribute('aria-valuenow') >= 96) {
                 const Ko = document.querySelector("button[aria-label='다음 동영상']");
                 const En = document.querySelector("button[aria-label='Next video']");
                 if (Ko) {
@@ -29,7 +29,7 @@ const auto = () => {
             }
         }
         auto();
-    }, 1000);
+    }, 950);
 };
 
 window.onload = auto;
