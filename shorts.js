@@ -1,5 +1,7 @@
+let adskip = false
 const auto = () => {
     if (!window.location.href.startsWith("https://www.youtube.com/shorts/")) return
+    console.log(adskip)
 
     const ad = document.querySelector('div.badge-shape-wiz__text');
     const adstyle = document.querySelector('.ytd-in-feed-ad-layout-renderer');
@@ -10,11 +12,13 @@ const auto = () => {
             ad.remove();
             const Ko = document.querySelector("button[aria-label='다음 동영상']");
             const En = document.querySelector("button[aria-label='Next video']");
-            if (Ko) {
+            if (Ko && !adskip) {
                 Ko.click();
+                adskip = true
             }
-            if (En) {
+            if (En && !adskip) {
                 En.click();
+                adskip = true
             }
         }
     }
@@ -26,6 +30,7 @@ const auto = () => {
         console.log('warking')
 
         if(slider){
+            adskip = false
             if (Number.isFinite(video.duration)) {
                 if(video.currentTime >= video.duration-.7){
                     console.log("Next");
