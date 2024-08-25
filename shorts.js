@@ -1,5 +1,5 @@
 const auto = () => {
-    if (!window.location.href.startsWith("https://www.youtube.com/shorts/")) return auto()
+    if (!window.location.href.startsWith("https://www.youtube.com/shorts/")) return
     for (let i = 0; i < document.getElementsByTagName("video").length; i++) {
         const video = document.getElementsByTagName('video')[i];
         const slider = document.querySelector("ytd-scrubber > desktop-shorts-player-controls > div > yt-progress-bar > div[role='slider']");
@@ -41,4 +41,4 @@ const auto = () => {
 
 window.onload = auto;
 
-setInterval(()=>{auto()},0)
+setInterval(()=>{auto()},100)
