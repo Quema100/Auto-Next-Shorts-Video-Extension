@@ -1,7 +1,6 @@
 let adskip = false
 const auto = () => {
     if (!window.location.href.startsWith("https://www.youtube.com/shorts/")) return
-    console.log(adskip)
 
     const ad = document.querySelector('div.badge-shape-wiz__text');
     const adstyle = document.querySelector('.ytd-in-feed-ad-layout-renderer');
