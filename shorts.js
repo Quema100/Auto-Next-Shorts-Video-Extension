@@ -26,7 +26,7 @@ const auto = () => {
         const video = document.getElementsByTagName('video')[i];
         const slider = document.querySelector("ytd-scrubber > desktop-shorts-player-controls > div > yt-progress-bar > div[role='slider']");
         
-        console.log('warking')
+        console.log('working')
 
         if(slider){
             adskip = false
