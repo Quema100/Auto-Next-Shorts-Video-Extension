@@ -23,7 +23,8 @@ const auto = () => {
 
         if(slider){
             if (Number.isFinite(video.duration)) {
-                if(video.currentTime >= video.duration-.1){
+                console.log(video.currentTime , video.duration)
+                if(video.currentTime >= video.duration-.3){
                     console.log("Next");
                     const Ko = document.querySelector("button[aria-label='다음 동영상']");
                     const En = document.querySelector("button[aria-label='Next video']");
@@ -41,4 +42,4 @@ const auto = () => {
 
 window.onload = auto;
 
-setInterval(()=>{auto()},0)
+setInterval(()=>{auto()},500)
