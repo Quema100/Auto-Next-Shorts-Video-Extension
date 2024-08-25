@@ -31,7 +31,7 @@ const auto = () => {
         if(slider){
             adskip = false
             if (Number.isFinite(video.duration)) {
-                if(video.currentTime >= video.duration-1){
+                if(video.currentTime >= video.duration-.5){
                     console.log("Next");
                     const Ko = document.querySelector("button[aria-label='다음 동영상']");
                     const En = document.querySelector("button[aria-label='Next video']");
