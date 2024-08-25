@@ -27,7 +27,6 @@ const auto = () => {
 
         if(slider){
             if (Number.isFinite(video.duration)) {
-                console.log(video.currentTime , video.duration)
                 if(video.currentTime >= video.duration-.7){
                     console.log("Next");
                     const Ko = document.querySelector("button[aria-label='다음 동영상']");
