@@ -49,4 +49,4 @@ const auto = () => {
 
 window.onload = auto;
 
-setInterval(()=>{auto()},1000)
+setInterval(()=>{auto()},500)
