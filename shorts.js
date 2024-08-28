@@ -7,7 +7,7 @@ const auto = () => {
 
     if(ad && adstyle && !adskip){
         if(ad.textContent === "스폰서" || ad.textContent === "Sponsored"){
-            console.log("adSkip");
+            console.log("adSkip",adskip);
             ad.remove();
             const Ko = document.querySelector("button[aria-label='다음 동영상']");
             const En = document.querySelector("button[aria-label='Next video']");
