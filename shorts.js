@@ -5,7 +5,7 @@ const auto = () => {
     const ad = document.querySelector('ad-badge-view-model > badge-shape > div[class="badge-shape-wiz__text"]');    
     const adstyle = document.querySelector('.ytd-in-feed-ad-layout-renderer');
 
-    if(ad && adstyle){
+    if(ad && adstyle && !adskip){
         if(ad.textContent === "스폰서" || ad.textContent === "Sponsored"){
             console.log("adSkip");
             ad.remove();
