@@ -2,7 +2,7 @@ let adskip = false
 const auto = () => {
     if (!window.location.href.startsWith("https://www.youtube.com/shorts/")) return
 
-    const ad = document.querySelector('div.badge-shape-wiz__text');
+    const ad = document.querySelector('ad-badge-view-model > badge-shape > div[class="badge-shape-wiz__text"]');    
     const adstyle = document.querySelector('.ytd-in-feed-ad-layout-renderer');
 
     if(ad && adstyle){
